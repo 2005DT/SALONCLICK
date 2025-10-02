@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SalonClick - Iniciar Sesión</title>
+  <!-- Estilos -->
+  <link rel="stylesheet" href="estilo/style.css">
+  <link rel="stylesheet" href="estilo/incio.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="login-body">
+
+  <!-- HEADER -->
+  <header class="main-header">
+    <div class="header-left">
+      <a href="inicio.html" class="icon-btn"><i class="fa-solid fa-user"></i></a>
+    </div>
+    <div class="header-center">
+      <h1>SalonClick</h1>
+      <p>Beauty Style</p>
+    </div>
+    <div class="header-right">
+      <div class="search-box">
+        <input type="text" placeholder="Search...">
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+      <a href="#" class="icon-btn"><i class="fa-solid fa-bag-shopping"></i></a>
+    </div>
+  </header>
+
+  <!-- LOGIN CARD -->
+  <section class="login-container">
+    <div class="login-card">
+      <h2>Iniciar Sesión</h2>
+      <form id="loginForm">
+        <div class="input-group">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" placeholder="ejemplo@email.com" required>
+        </div>
+        <div class="input-group">
+          <label for="password">Contraseña</label>
+          <input type="password" id="password" placeholder="********" required>
+        </div>
+        <button type="submit" class="btn">Ingresar</button>
+        <div class="extra-links">
+          <a href="#">¿Olvidaste tu contraseña?</a>
+          <a href="#">Registrarse</a>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2025 SalonClick. Todos los derechos reservados.</p>
+    <div class="socials">
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+  </footer>
+
+  <script src="script/javaInicio.js"></script>
+</body>
+</html>

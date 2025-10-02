@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SalonClick - Tu estilo, tu tiempo</title>
+  <link rel="stylesheet" href="estilo/style.css">
+  <link rel="stylesheet" href="estilo/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="main-header">
+    <div class="header-left">
+      <div class="logo">
+        <h1><span class="salon">Salon</span><span class="click">Click</span></h1>
+        <p>Beauty & Style</p>
+      </div>
+    </div>
+    
+    <nav class="main-nav">
+      <a href="#inicio" class="nav-link active">Inicio</a>
+      <a href="#servicios" class="nav-link">Servicios</a>
+      <a href="#reservar" class="nav-link">Reservar Cita</a>
+      <a href="#contacto" class="nav-link">Contacto</a>
+    </nav>
+
+    <div class="header-right">
+      <a href="inicio.html" class="login-btn">
+        <i class="fa-solid fa-user"></i>
+        <span>Iniciar Sesión</span>
+      </a>
+      <a href="#reservar" class="cta-btn">Agendar Cita</a>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg">
+      <div class="hero-overlay"></div>
+    </div>
+    
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Tu estilo, tu tiempo.</h1>
+        <h2>Reserva fácil con <span class="highlight">SalonClick</span></h2>
+        <p>Experimenta la belleza de una manera completamente nueva. Agenda tu cita en segundos.</p>
+        <div class="hero-buttons">
+          <a href="#reservar" class="btn-primary">Reservar Ahora</a>
+          <a href="#servicios" class="btn-secondary">Ver Servicios</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARRUSEL DE IMÁGENES -->
+  <section class="image-carousel">
+    <div class="slider">
+      <div class="slides">
+        <!-- Radio buttons -->
+        <input type="radio" name="radio-btn" id="radio1" checked>
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        
+
+        <!-- Imágenes -->
+       <div class="slide first" style="--bg:url('img/maquillaje.jpg')">
+        <img src="img/maquillaje.jpg" alt="Maquillaje profesional">
+        <div class="slide-content">
+          <h3>Maquillaje Profesional</h3>
+          <p>Resalta tu belleza natural</p>
+        </div>
+      </div>
+        <div class="slide second" style="--bg:url('img/barberia.jpg')">
+          <img src="img/barberia.jpg" alt="Barbería moderna">
+          <div class="slide-content">
+            <h3>Barbería Moderna</h3>
+            <p>Cortes y estilos únicos</p>
+          </div>
+        </div>
+        <div class="slide third" style="--bg:url('img/estilo.jpg')">
+          <img src="img/estilo.jpg" alt="Looks Autenticos">
+          <div class="slide-content">
+            <h3>Spa & Relajación</h3>
+            <p>Momentos de tranquilidad</p>
+          </div>
+        </div>
+        <div class="slide fourth" style="--bg:url('img/manicure.jpg')">
+          <img src="img/manicure.jpg" alt="Manicure elegante">
+          <div class="slide-content">
+            <h3>Manicure & Pedicure</h3>
+            <p>Cuidado completo de manos</p>
+          </div>
+        </div>
+
+        <!-- Navegación automática -->
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+      </div>
+
+      <!-- Navegación manual -->
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+
+      <!-- Controles de navegación -->
+      <div class="slider-controls">
+        <button class="prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS DESTACADOS -->
+  <section class="services" id="servicios">
+    <div class="container">
+      <div class="section-header">
+        <h2>Nuestros Servicios</h2>
+        <p>Descubre la excelencia en cada detalle</p>
+      </div>
+      
+      <div class="service-grid">
+        <div class="service-card" data-aos="fade-up">
+          <div class="service-icon">
+            <i class="fa-solid fa-scissors"></i>
+          </div>
+          <h3>Corte de Cabello</h3>
+          <p>Estilos modernos y clásicos adaptados a tu personalidad</p>
+          <div class="service-price">Desde $25</div>
+        </div>
+        
+        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-icon">
+            <i class="fa-solid fa-hand-sparkles"></i>
+          </div>
+          <h3>Manicure & Pedicure</h3>
+          <p>Cuidado profesional para manos y pies impecables</p>
+          <div class="service-price">Desde $20</div>
+        </div>
+        
+        <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-icon">
+            <i class="fa-solid fa-palette"></i>
+          </div>
+          <h3>Maquillaje</h3>
+          <p>Maquillaje profesional para eventos especiales</p>
+          <div class="service-price">Desde $35</div>
+        </div>
+        
+        <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-icon">
+            <i class="fa-solid fa-spa"></i>
+          </div>
+          <h3>Tratamientos Spa</h3>
+          <p>Relajación y cuidado corporal completo</p>
+          <div class="service-price">Desde $45</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFICIOS -->
+  <section class="benefits">
+    <div class="container">
+      <div class="benefits-grid">
+        <div class="benefit-item" data-aos="fade-right">
+          <div class="benefit-icon">
+            <i class="fa-solid fa-clock"></i>
+          </div>
+          <h3>Reserva 24/7</h3>
+          <p>Agenda tu cita cuando quieras, donde quieras</p>
+        </div>
+        
+        <div class="benefit-item" data-aos="fade-up">
+          <div class="benefit-icon">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <h3>Profesionales Expertos</h3>
+          <p>Los mejores estilistas y terapeutas</p>
+        </div>
+        
+        <div class="benefit-item" data-aos="fade-left">
+          <div class="benefit-icon">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <h3>Experiencia Única</h3>
+          <p>Cada visita es un momento especial</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <h2>Lo que dicen nuestros clientes</h2>
+      </div>
+      
+      <div class="testimonials-slider">
+        <div class="testimonial-card active">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>"El mejor salón de la ciudad. La atención es excepcional y los resultados siempre superan mis expectativas."</p>
+          <div class="client-info">
+            <strong>María González</strong>
+            <span>Cliente frecuente</span>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>"SalonClick cambió mi experiencia de belleza. Súper fácil reservar y el servicio es increíble."</p>
+          <div class="client-info">
+            <strong>Ana Rodríguez</strong>
+            <span>Cliente satisfecha</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CALL TO ACTION -->
+  <section class="cta-section" id="reservar">
+    <div class="container">
+      <div class="cta-content">
+        <h2>¿Listo para tu transformación?</h2>
+        <p>No esperes más. Tu momento de belleza te está esperando.</p>
+        <a href="reservar.html" class="btn-cta">Reservar Mi Cita Ahora</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">
+            <h3><span class="salon">Salon</span><span class="click">Click</span></h3>
+            <p>Tu estilo, tu tiempo</p>
+          </div>
+          <div class="socials">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Contacto</h4>
+          <p><i class="fa-solid fa-phone"></i> +57 300 123 4567</p>
+          <p><i class="fa-solid fa-envelope"></i> info@salonclick.com</p>
+          <p><i class="fa-solid fa-location-dot"></i> Bogotá, Colombia</p>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Enlaces Rápidos</h4>
+          <a href="#inicio">Inicio</a>
+          <a href="#servicios">Servicios</a>
+          <a href="#reservar">Reservar</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 SalonClick. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script/javaIndex.js"></script>
+</body>
+</html>
